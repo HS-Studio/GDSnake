@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://i4cndkabr8eh"
+
+[deps]
+
+files=["res://levels/bg.0.translation", "res://levels/bg.0.translation", "res://levels/bg.0.translation", "res://levels/bg.0.translation", "res://levels/bg.0.translation", "res://levels/bg.0.translation", "res://levels/bg.0.translation", "res://levels/bg.0.translation", "res://levels/bg.0.translation", "res://levels/bg.0.translation", "res://levels/bg.0.translation", "res://levels/bg.0.translation", "res://levels/bg.0.translation", "res://levels/bg.0.translation"]
+
+source_file="res://levels/bg.csv"
+dest_files=["res://levels/bg.0.translation", "res://levels/bg.0.translation", "res://levels/bg.0.translation", "res://levels/bg.0.translation", "res://levels/bg.0.translation", "res://levels/bg.0.translation", "res://levels/bg.0.translation", "res://levels/bg.0.translation", "res://levels/bg.0.translation", "res://levels/bg.0.translation", "res://levels/bg.0.translation", "res://levels/bg.0.translation", "res://levels/bg.0.translation", "res://levels/bg.0.translation"]
+
+[params]
+
+compress=true
+delimiter=0

@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://6jfokg36sol"]
+
+[ext_resource type="Script" uid="uid://25mrnjg2hbci" path="res://scripts/snake.gd" id="1_lnu2h"]
+[ext_resource type="TileSet" uid="uid://bc8oh7twqgoxb" path="res://assets/tilesets/game_tiles.tres" id="2_lbhrr"]
+[ext_resource type="TileSet" uid="uid://kfwasex1mmuo" path="res://assets/tilesets/snake_tiles.tres" id="3_iywne"]
+[ext_resource type="TileSet" uid="uid://c5n66simbyll4" path="res://assets/tilesets/snake_tiles1.tres" id="4_lbhrr"]
+[ext_resource type="FontFile" uid="uid://bwpsuweyrt0o3" path="res://assets/fonts/rainyhearts.ttf" id="5_iywne"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_p57ef"]
+line_spacing = 0.0
+font = ExtResource("5_iywne")
+
+[node name="Snake" type="Node2D" unique_id=1338601390]
+script = ExtResource("1_lnu2h")
+
+[node name="bg_tiles" type="TileMapLayer" parent="." unique_id=2001530579]
+tile_set = ExtResource("2_lbhrr")
+
+[node name="snake_tiles" type="TileMapLayer" parent="." unique_id=1207817511]
+tile_set = ExtResource("3_iywne")
+
+[node name="snake_tiles1" type="TileMapLayer" parent="." unique_id=506694128]
+tile_set = ExtResource("4_lbhrr")
+
+[node name="game_tiles" type="TileMapLayer" parent="." unique_id=344421979]
+tile_set = ExtResource("2_lbhrr")
+
+[node name="ScoreIcons" type="TileMapLayer" parent="." unique_id=983283045]
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = ExtResource("2_lbhrr")
+
+[node name="ScoreValue" type="Label" parent="." unique_id=87850519]
+offset_left = 16.0
+offset_right = 35.0
+offset_bottom = 16.0
+text = "000"
+label_settings = SubResource("LabelSettings_p57ef")
+
+[node name="HighscoreValue" type="Label" parent="." unique_id=2053249410]
+offset_left = 80.0
+offset_right = 99.0
+offset_bottom = 16.0
+text = "000"
+label_settings = SubResource("LabelSettings_p57ef")

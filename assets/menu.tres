@@ -1,0 +1,15 @@
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://2lsw0kt4023p"]
+
+[ext_resource type="FontFile" uid="uid://bwpsuweyrt0o3" path="res://assets/fonts/rainyhearts.ttf" id="1_lvici"]
+[ext_resource type="StyleBox" uid="uid://j3a0etpp4me1" path="res://assets/button_style_box_texture.tres" id="1_sdkal"]
+[ext_resource type="StyleBox" uid="uid://52kg2ekd3kd5" path="res://assets/button_pressed_style_box_texture.tres" id="2_rqd0k"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rqd0k"]
+
+[resource]
+default_font = ExtResource("1_lvici")
+default_font_size = 22
+Button/styles/focus = SubResource("StyleBoxEmpty_rqd0k")
+Button/styles/hover = ExtResource("1_sdkal")
+Button/styles/normal = ExtResource("1_sdkal")
+Button/styles/pressed = ExtResource("2_rqd0k")

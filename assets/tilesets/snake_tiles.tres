@@ -1,0 +1,25 @@
+[gd_resource type="TileSet" format=3 uid="uid://kfwasex1mmuo"]
+
+[ext_resource type="Texture2D" uid="uid://d1vjyo37tnlog" path="res://assets/tilesets/snake_tiles.png" id="1_ubniq"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ubniq"]
+texture = ExtResource("1_ubniq")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+
+[resource]
+sources/0 = SubResource("TileSetAtlasSource_ubniq")

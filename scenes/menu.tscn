@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://cx00phqlodc2b"]
+
+[ext_resource type="Script" uid="uid://gnq7q3npuwco" path="res://scripts/menu_control.gd" id="1_vjb58"]
+[ext_resource type="Theme" uid="uid://2lsw0kt4023p" path="res://assets/menu.tres" id="2_con2f"]
+
+[node name="Menu" type="Node2D" unique_id=1785408345]
+script = ExtResource("1_vjb58")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1352112037]
+offset_right = 250.0
+offset_bottom = 218.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer" unique_id=601004439]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+theme = ExtResource("2_con2f")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/HBoxContainer" unique_id=1433348869]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="btn_start" type="Button" parent="CenterContainer/HBoxContainer/VBoxContainer" unique_id=1604033557]
+unique_name_in_owner = true
+layout_mode = 2
+focus_next = NodePath("../btn_highscore")
+text = "Start"
+
+[node name="btn_highscore" type="Button" parent="CenterContainer/HBoxContainer/VBoxContainer" unique_id=245977517]
+layout_mode = 2
+focus_previous = NodePath("../btn_start")
+text = "  Highscores  "
+
+[node name="btn_mode" type="Button" parent="CenterContainer/HBoxContainer/VBoxContainer" unique_id=996239099]
+unique_name_in_owner = true
+layout_mode = 2
+toggle_mode = true
+action_mode = 0
+text = "Easy Mode"
+
+[connection signal="pressed" from="CenterContainer/HBoxContainer/VBoxContainer/btn_start" to="." method="_on_btn_start_pressed"]
+[connection signal="pressed" from="CenterContainer/HBoxContainer/VBoxContainer/btn_highscore" to="." method="_on_btn_highscore_pressed"]
+[connection signal="toggled" from="CenterContainer/HBoxContainer/VBoxContainer/btn_mode" to="." method="_on_btn_mode_toggled"]

@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dij2f3dudls70"]
+
+[ext_resource type="Script" uid="uid://ct8n86wj7qsf7" path="res://scripts/settings.gd" id="1_6wm04"]
+[ext_resource type="Theme" uid="uid://2lsw0kt4023p" path="res://assets/menu.tres" id="2_f4mfi"]
+[ext_resource type="TileSet" uid="uid://bc8oh7twqgoxb" path="res://assets/tilesets/game_tiles.tres" id="3_es4n0"]
+
+[node name="Settings" type="Node2D" unique_id=313949879]
+script = ExtResource("1_6wm04")
+
+[node name="back" type="Button" parent="." unique_id=1187051482]
+offset_right = 8.0
+offset_bottom = 40.0
+theme = ExtResource("2_f4mfi")
+flat = true
+icon_alignment = 1
+
+[node name="backTile" type="TileMapLayer" parent="back" unique_id=1443887533]
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 3, 0, 0, 0)
+tile_set = ExtResource("3_es4n0")
+
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]
